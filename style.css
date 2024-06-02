@@ -18,6 +18,9 @@ ul {
 a {
   text-decoration: none;
 }
+body {
+  overflow-x: hidden;
+}
 /* header-top */
 
 .header-top-content {
@@ -86,6 +89,7 @@ a {
   position: relative;
   padding-top: 120px;
   padding-bottom: 30px;
+  width: 100%;
 }
 .hero-section-content h1 {
   margin-top: 120px;
@@ -94,7 +98,7 @@ a {
   font-weight: 700;
   line-height: 56.88px;
   color: #ffffff;
-  width: 300px;
+  max-width: 300px;
 }
 .hero-section-content span {
   margin-top: 120px;
@@ -104,13 +108,16 @@ a {
   line-height: 56.88px;
   color: #fccd05;
 }
-.hero-section-content p {
-  padding-top: 30px;
+.kero_content_text_par p {
+  /* padding-top: 30px; */
   font-family: Rubik;
   font-size: 20px;
   font-weight: 300;
   line-height: 23.7px;
   color: #fff;
+  max-width: 300px !important;
+  /* background: red; */
+  padding: 0;
 }
 .hero-section-content button {
   margin-top: 50px;
@@ -165,6 +172,803 @@ a {
   left: 30px;
   bottom: 20px;
 }
+
+/* product-section */
+
+.product-section {
+  margin-top: 100px;
+}
+.product-section-content-title {
+  text-align: center;
+  display: block;
+  justify-content: center;
+}
+.product-section-content-title h1 {
+  padding-bottom: 3px;
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+}
+.product-section-content-title p {
+  padding-top: 20px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.product-section-content-category {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.product-section-content-category button {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 8px 20px;
+  border: none;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #443e3e;
+  transition: 0.2s !important;
+  background: transparent;
+  /* margin-bottom: 100px; */
+}
+.product-section-content-category button path {
+  fill: #000;
+  transition: 0.2s;
+}
+.product-section-content-category button:hover {
+  background: linear-gradient(90deg, #e81212 0%, #fccd05 100%);
+  color: #fff;
+}
+.product-section-content-category button:hover svg path {
+  fill: white;
+}
+.product-section-content-card-Цветной {
+  position: relative;
+}
+.product-section-content-card-Цветной .New {
+  position: absolute;
+  top: 0px;
+  left: 35px;
+}
+.product-section-content-card-Цветной .discount {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+}
+.product-section-content-card-Цветной .like {
+  position: absolute;
+  top: 0px;
+  left: 240px;
+}
+.product-section-content-card-Цветной .New button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #fff;
+  background: #478ecc;
+  border: none;
+}
+.product-section-content-card-Цветной .discount button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #fff;
+  background: #e81212;
+  border: none;
+}
+.product-section-content-card-Цветной .Video-review {
+  position: absolute;
+  left: 75px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.product-section-content-card-Цветной .Video-review p {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #443e3e;
+}
+.product-section-content-card-Цветной .text {
+  margin-top: 20px;
+}
+.product-section-content-card-Цветной .text h5 {
+  margin-top: 40px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #443e3e;
+  width: 245px;
+}
+.product-section-content-card-Цветной .availability {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-section-content-card-Цветной .availability p {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #646469;
+}
+.product-section-content-card-Цветной div {
+  margin-top: 20px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #e81212;
+}
+.product-section-content-card-Цветной span {
+  margin-top: 20px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-decoration: line-through;
+  color: #999999;
+}
+.product-section-content-card-Цветной .order {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.product-section-content-card-Цветной .order .btn1 {
+  padding: 15px 24.5px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  border: none;
+  background-color: #e81212;
+  color: #ffffff;
+}
+.product-section-content-card-Цветной .order .btn2 {
+  padding: 15px 49px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  background: transparent;
+  border: none;
+  border: 1px solid #e81212;
+  color: #e81212;
+}
+/* Шутихи */
+
+.product-section-content-card-Шутихи {
+  position: relative;
+}
+.product-section-content-card-Шутихи .New {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+.product-section-content-card-Шутихи .Hit {
+  position: absolute;
+  top: 60px;
+  left: 35px;
+}
+.product-section-content-card-Шутихи .like {
+  position: absolute;
+  top: 20px;
+  left: 240px;
+}
+.product-section-content-card-Шутихи .New button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #fff;
+  background: #478ecc;
+  border: none;
+}
+.product-section-content-card-Шутихи .Hit button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #443e3e;
+  background: #fccd05;
+  border: none;
+}
+.product-section-content-card-Шутихи .Video-review {
+  position: absolute;
+  left: 75px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.product-section-content-card-Шутихи .Video-review p {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #443e3e;
+}
+.product-section-content-card-Шутихи .text {
+  margin-top: 20px;
+}
+.product-section-content-card-Шутихи .text h5 {
+  margin-top: 40px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #443e3e;
+  width: 245px;
+}
+.product-section-content-card-Шутихи .availability {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-section-content-card-Шутихи .availability p {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #646469;
+}
+.product-section-content-card-Шутихи h4 {
+  padding-top: 20px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #443e3e;
+}
+.product-section-content-card-Шутихи .order {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.product-section-content-card-Шутихи .order .btn1 {
+  padding: 15px 24.5px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  border: none;
+  background-color: #e81212;
+  color: #ffffff;
+}
+.product-section-content-card-Шутихи .order .btn2 {
+  padding: 15px 49px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  background: transparent;
+  border: none;
+  border: 1px solid #e81212;
+  color: #e81212;
+}
+
+/* Салют */
+.product-section-content-card-Салют {
+  position: relative;
+}
+.product-section-content-card-Салют .recommend {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+.product-section-content-card-Салют .like {
+  position: absolute;
+  top: 20px;
+  left: 240px;
+}
+.product-section-content-card-Салют .recommend button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: none;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #fff;
+  background: #69a042;
+}
+.product-section-content-card-Салют .Video-review {
+  position: absolute;
+  left: 75px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.product-section-content-card-Салют .Video-review p {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #443e3e;
+}
+.product-section-content-card-Салют .text {
+  margin-top: 20px;
+}
+.product-section-content-card-Салют .text h5 {
+  margin-top: 40px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #443e3e;
+  width: 245px;
+}
+.product-section-content-card-Салют .availability {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-section-content-card-Салют .availability p {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #646469;
+}
+.product-section-content-card-Салют h4 {
+  padding-top: 40px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #443e3e;
+}
+.product-section-content-card-Салют .order {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.product-section-content-card-Салют .order .btn1 {
+  padding: 15px 24.5px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  border: none;
+  background-color: #e81212;
+  color: #ffffff;
+}
+.product-section-content-card-Салют .order .btn2 {
+  padding: 15px 49px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  background: transparent;
+  border: none;
+  border: 1px solid #e81212;
+  color: #e81212;
+}
+
+/* Римская */
+
+.product-section-content-card-Римская {
+  position: relative;
+}
+.product-section-content-card-Римская .New {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+.product-section-content-card-Римская .recommend {
+  position: absolute;
+  top: 60px;
+  left: 35px;
+}
+.product-section-content-card-Римская .like {
+  position: absolute;
+  top: 20px;
+  left: 240px;
+}
+.product-section-content-card-Римская .New button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #fff;
+  background: #478ecc;
+  border: none;
+}
+.product-section-content-card-Римская .recommend button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: none;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #fff;
+  background: #69a042;
+}
+.product-section-content-card-Римская .Video-review {
+  position: absolute;
+  left: 75px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.product-section-content-card-Римская .Video-review p {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #443e3e;
+}
+.product-section-content-card-Римская .text {
+  margin-top: 20px;
+}
+.product-section-content-card-Римская .text h5 {
+  margin-top: 40px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #443e3e;
+  width: 205px;
+}
+.product-section-content-card-Римская .availability {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-section-content-card-Римская .availability p {
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  color: #646469;
+}
+.product-section-content-card-Римская h4 {
+  padding-top: 20px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #443e3e;
+}
+.product-section-content-card-Римская .order {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.product-section-content-card-Римская .order .btn1 {
+  padding: 15px 24.5px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  border: none;
+  background-color: #e81212;
+  color: #ffffff;
+}
+.product-section-content-card-Римская .order .btn2 {
+  padding: 15px 49px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  background: transparent;
+  border: none;
+  border: 1px solid #e81212;
+  color: #e81212;
+}
+.p {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-section-content .каталог {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.product-section-content .каталог button {
+  padding: 15px 30px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  background: transparent;
+  border: 1px solid red;
+  outline: none;
+  /* margin-bottom: 50px; */
+  color: red;
+}
+
+/* праздник-section */
+
+.праздник-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.праздник-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+  width: 508px;
+}
+.праздник-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Пиротехника-card {
+  text-align: center;
+}
+.Пиротехника-card img {
+  margin-top: 60px;
+}
+.Пиротехника-card h3 {
+  margin-top: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #443e3e;
+}
+.Пиротехника-card p {
+  margin-top: 10px;
+  width: 340px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  columns: #646469;
+}
+
+/* Профессиональные */
+
+.летний-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+  width: 508px;
+}
+.летний-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.летний-card {
+  text-align: center;
+}
+.летний-card img {
+  margin-top: 60px;
+}
+.летний-card h3 {
+  margin-top: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #443e3e;
+}
+.летний-card p {
+  margin-top: 10px;
+  width: 340px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  columns: #646469;
+}
+/* летний */
+
+.Профессиональные-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+  width: 508px;
+}
+.Профессиональные-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.Профессиональные-card {
+  text-align: center;
+}
+.Профессиональные-card img {
+  margin-top: 60px;
+}
+.Профессиональные-card h3 {
+  margin-top: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #443e3e;
+}
+.Профессиональные-card p {
+  margin-top: 10px;
+  width: 340px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  columns: #646469;
+}
+
+/* Лучшие */
+
+.Лучшие-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+  width: 508px;
+}
+.Лучшие-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.Лучшие-card {
+  text-align: center;
+}
+.Лучшие-card img {
+  margin-top: 60px;
+}
+.Лучшие-card h3 {
+  margin-top: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #443e3e;
+}
+.Лучшие-card p {
+  margin-top: 10px;
+  width: 340px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  columns: #646469;
+}
+
+/* Доставка */
+
+.ЛучДоставкаие-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+  width: 508px;
+}
+.Доставка-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.Доставка-card {
+  text-align: center;
+}
+.Доставка-card img {
+  margin-top: 60px;
+}
+.Доставка-card h3 {
+  margin-top: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #443e3e;
+}
+.Доставка-card p {
+  margin-top: 10px;
+  width: 340px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  columns: #646469;
+}
+
+/* Проверка */
+
+.ЛучДоставкаие-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+  width: 508px;
+}
+.Проверка-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+}
+.Проверка-card {
+  text-align: center;
+}
+.Проверка-card img {
+  margin-top: 60px;
+}
+.Проверка-card h3 {
+  margin-top: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #443e3e;
+}
+.Проверка-card p {
+  margin-top: 10px;
+  width: 340px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  columns: #646469;
+}
+
 /* respansive */
 
 @media (max-width: 1232px) {
@@ -196,7 +1000,191 @@ a {
     display: none;
   }
 }
+@media (max-width: 887px) {
+  .p {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 742px) {
+  .mobile-card {
+    margin-top: -25px;
+  }
+  .Пиротехника-card {
+    text-align: unset;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+  .Пиротехника-card h3 {
+    width: 275px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Пиротехника-card p {
+    width: 275px;
+  }
+  .mobile-card {
+    margin-top: -25px;
+  }
+  .Профессиональные-card {
+    display: flex;
+    text-align: unset;
+    align-items: start;
+    gap: 10px;
+  }
+  .Профессиональные-card h3 {
+    width: 275px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Профессиональные-card p {
+    width: 275px;
+  }
+  .летний-card {
+    text-align: unset;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+  .летний-card h3 {
+    width: 275px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .летний-card p {
+    width: 275px;
+  }
+  .Лучшие-card {
+    text-align: unset;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+  .Лучшие-card h3 {
+    width: 275px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Лучшие-card p {
+    width: 275px;
+  }
+  .Доставка-card {
+    text-align: unset;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+  .Доставка-card h3 {
+    width: 275px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Доставка-card p {
+    width: 275px;
+  }
+  .Проверка-card {
+    text-align: unset;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+  .Проверка-card h3 {
+    width: 275px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Проверка-card p {
+    width: 275px;
+  }
+}
+@media (max-width: 677px) {
+  .product-section-content-category {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .праздник-section-content h2 {
+    width: 340px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 602px) {
+  .p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-section-content-card-Цветной .New {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .product-section-content-card-Цветной .discount {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+  }
+  .product-section-content-card-Шутихи .New {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+  .product-section-content-card-Шутихи .Hit {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
+  .product-section-content-card-Салют .New {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+  .product-section-content-card-Римская .New {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+  .product-section-content-card-Римская .recommend {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
+  .product-section-content-card-Цветной .like {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+  }
+  .product-section-content-card-Цветной .text h5 {
+    width: 100%;
+  }
+  .product-section-content-card-Шутихи .text h5 {
+    width: 100%;
+  }
+  .product-section-content-card-Салют .text h5 {
+    width: 100%;
+  }
+  .product-section-content-card-Римская .text h5 {
+    width: 100%;
+  }
+  .product-section-content-card-Цветной .order {
+    display: flex !important;
+  }
+  .product-section-content-card-Римская .order {
+    display: flex;
+  }
+  .product-section-content-card-Салют .order {
+    display: flex;
+  }
+  .product-section-content-card-Римская .order {
+    display: flex;
+  }
+}
 @media (max-width: 535px) {
+  .hero-section-content {
+    margin: auto;
+  }
   .hero-section-content h1 {
     margin-top: 10px;
     font-size: 38px;
@@ -211,21 +1199,30 @@ a {
     line-height: 46.88px;
     text-align: center;
   }
-  .hero-section-content p {
+  .kero_content_text_par p {
     margin-top: -10 px;
     font-size: 10px;
     font-weight: 200;
     line-height: 13.7px;
     text-align: center;
-    width: 300px;
+    max-width: 300px !important;
   }
   .hero-section-content button {
     font-size: 10px;
     font-weight: 300;
     line-height: 13.22px;
     padding: 10px 20px;
-    margin-left: 85px;
-    text-align: center;
+    /* text-align: center; */
+  }
+  .product-section-content-title h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 32.66px;
+  }
+  .product-section-content-title p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15px;
   }
 }
 @media (max-width: 350px) {
@@ -243,20 +1240,95 @@ a {
     line-height: 36.88px;
     text-align: center;
   }
-  .hero-section-content p {
-    margin-top: -10 px;
-    font-size: 10px;
-    font-weight: 100;
-    line-height: 13.7px;
-    text-align: center;
-    width: 300px;
-  }
-  .hero-section-content button {
+  .hero-section-content-button button {
     font-size: 10px;
     font-weight: 200;
     line-height: 12.22px;
     padding: 5px 10px;
     margin-left: 85px;
-    text-align: center;
+    /* text-align: center; */
+  }
+  .hero-section-img img {
+    margin: auto;
+    max-width: 250px;
+  }
+  .order {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .product-section-content-card-Цветной .order .btn1 {
+    padding: 10px 10px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10.22px;
+  }
+  .product-section-content-card-Цветной .order .btn2 {
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10.22px;
+  }
+  .product-section-content-card-Шутихи .order .btn1 {
+    padding: 10px 10px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10.22px;
+  }
+  .product-section-content-card-Шутихи .order .btn2 {
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10.22px;
+  }
+  .product-section-content-card-Салют .order .btn1 {
+    padding: 10px 10px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10.22px;
+  }
+  .product-section-content-card-Салют .order .btn2 {
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10.22px;
+  }
+  .product-section-content-card-Римская .order .btn1 {
+    padding: 10px 10px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10.22px;
+  }
+  .product-section-content-card-Римская .order .btn2 {
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 10.22px;
+  }
+  .праздник-section-content h2 {
+    width: 300px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .Проверка-card p {
+    width: 200px;
+  }
+  .Доставка-card p {
+    width: 200px;
+  }
+  .Лучшие-card p {
+    width: 200px;
+  }
+  .Профессиональные-card p {
+    width: 200px;
+  }
+  .летний-card p {
+    width: 200px;
+  }
+  .Пиротехника-card p {
+    width: 200px;
+  }
+  .Профессиональные-card h3 {
+    width: 200px;
   }
 }
