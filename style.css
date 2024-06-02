@@ -18,9 +18,6 @@ ul {
 a {
   text-decoration: none;
 }
-body {
-  overflow-x: hidden;
-}
 /* header-top */
 
 .header-top-content {
@@ -744,6 +741,7 @@ body {
 .праздник-card-section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .Пиротехника-card {
@@ -1310,22 +1308,37 @@ body {
     font-size: 18px;
     line-height: 18px;
   }
+  .Пиротехника-card h3 {
+    width: 200px;
+  }
+  .Пиротехника-card p {
+    width: 200px;
+  }
+  .Проверка-card h3 {
+    width: 200px;
+  }
   .Проверка-card p {
+    width: 200px;
+  }
+  .Доставка-card h3{
     width: 200px;
   }
   .Доставка-card p {
     width: 200px;
   }
+  .Лучшие-card h3{
+    width: 200px;
+  }
   .Лучшие-card p {
     width: 200px;
   }
-  .Профессиональные-card p {
+  .летний-card h3{
     width: 200px;
   }
   .летний-card p {
     width: 200px;
   }
-  .Пиротехника-card p {
+  .Профессиональные-card p {
     width: 200px;
   }
   .Профессиональные-card h3 {
