@@ -40,6 +40,7 @@ a {
   background-color: #fccd05;
   color: #443e3e;
   transition: all 0.1s linear;
+  cursor: pointer;
 }
 
 /* header-bottom */
@@ -66,6 +67,7 @@ a {
 .header-item a:hover {
   color: #443e3e;
   transition: all 0.1s linear;
+  cursor: pointer;
 }
 
 /* header-phone */
@@ -106,14 +108,12 @@ a {
   color: #fccd05;
 }
 .kero_content_text_par p {
-  /* padding-top: 30px; */
   font-family: Rubik;
   font-size: 20px;
   font-weight: 300;
   line-height: 23.7px;
   color: #fff;
   max-width: 300px !important;
-  /* background: red; */
   padding: 0;
 }
 .hero-section-content button {
@@ -132,6 +132,7 @@ a {
   background-color: #fccd05;
   color: #443e3e;
   transition: all 0.1s linear;
+  cursor: pointer;
 }
 .hero-section .hero-section-img {
   display: flex;
@@ -222,9 +223,11 @@ a {
 .product-section-content-category button:hover {
   background: linear-gradient(90deg, #e81212 0%, #fccd05 100%);
   color: #fff;
+  cursor: pointer;
 }
 .product-section-content-category button:hover svg path {
   fill: white;
+  cursor: pointer;
 }
 .product-section-content-card-Цветной {
   position: relative;
@@ -387,6 +390,13 @@ a {
   background: #478ecc;
   border: none;
 }
+.par {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 .product-section-content-card-Шутихи .Hit button {
   display: flex;
   align-items: center;
@@ -477,6 +487,7 @@ a {
 }
 
 /* Салют */
+
 .product-section-content-card-Салют {
   position: relative;
 }
@@ -720,8 +731,16 @@ a {
   background: transparent;
   border: 1px solid red;
   outline: none;
-  /* margin-bottom: 50px; */
   color: red;
+}
+.product-section-content .каталог button:hover {
+  background-color: #fccd05;
+  color: #443e3e;
+  transition: all 0.2s linear;
+  border: #fccd05;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 0px 80px -5px rgba(248, 231, 28, 1);
 }
 
 /* праздник-section */
@@ -1043,8 +1062,314 @@ a {
   line-height: 21px;
   color: #443e3e;
 }
+
+/* Отзывы */
+
+.Отзывы-section {
+  margin-top: 100px;
+}
+.Отзывы-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+}
+.Отзывы-section-content-работе {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.browser {
+  margin-top: 40px;
+}
+.mobile-img-google {
+  display: none;
+}
+.yandex h3 {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  width: 210px;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #443e3e;
+}
+.yandex span {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #443e3e;
+}
+.text {
+  display: block;
+  margin-top: 40px;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.Отзывы-card {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  border-bottom: 1px solid #fbe0e0;
+  margin-top: 30px;
+}
+.Отзывы-card img {
+  padding-bottom: 36px;
+}
+.Отзывы-card h3 {
+  display: flex;
+  margin-top: -5px;
+  margin-bottom: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #443e3e;
+}
+.Отзывы-card div {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #999999;
+}
+.Отзывы-card p {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #443e3e;
+}
+.text-title p {
+  display: none;
+}
+.Отзывы-section-content-работе-btn {
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+}
+.Отзывы-section-content-работе-btn button {
+  padding: 15px 30px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  background: transparent;
+  color: #e81212;
+  border: 1px solid #e81212;
+  margin-bottom: 50px;
+}
+.Отзывы-section-content-работе-btn button:hover {
+  background-color: #fccd05;
+  color: #443e3e;
+  transition: all 0.2s linear;
+  border: #fccd05;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 0px 80px -5px rgba(248, 231, 28, 1);
+}
+
+/* Наши-section */
+
+.Наши-section {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.Наши-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+}
+.Наши-section-content-card {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.Наши-section-content-card img {
+  width: 300px;
+}
+.Наши-section-content-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.Наши-section-content-btn button {
+  padding: 15px 30px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  background: transparent;
+  color: #e81212;
+  border: 1px solid #e81212;
+}
+.Наши-section-content-btn button:hover {
+  background-color: #fccd05;
+  color: #443e3e;
+  transition: all 0.2s linear;
+  border: #fccd05;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 0px 80px -5px rgba(248, 231, 28, 1);
+}
+
+/*  */
+
+.Статьи-section-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Статьи-section-content h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+}
+.Статьи-section-content-img {
+  margin-top: 40px;
+  position: relative;
+}
+.Статьи-section-content-img img {
+  width: 100%;
+}
+.Статьи-section-content-img p {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fbe0e0;
+}
+.Статьи-section-content-img h3 {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #fff;
+}
+.Статьи-section-content-news {
+  margin-top: 110px;
+  display: block;
+  justify-content: space-between;
+}
+.Статьи-section-content-news .text {
+  padding-left: 2px;
+  border-left: 1px solid #fbe0e0;
+}
+.Статьи-section-content-news .text p {
+  margin-top: -50px;
+  padding-left: 20px;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  /* border-left: 1px solid #fbe0e0; */
+  color: #999999;
+}
+.Статьи-section-content-news .text h3 {
+  margin-bottom: 110px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #443e3e;
+  /* border-left: 1px solid #fbe0e0; */
+  border-bottom: 1px solid #fbe0e0;
+}
+.Статьи-section-content-btn {
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.Статьи-section-content-btn button {
+  padding: 15px 30px;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.22px;
+  background: transparent;
+  color: #e81212;
+  border: 1px solid #e81212;
+}
+.Статьи-section-content-btn button:hover {
+  background-color: #fccd05;
+  color: #443e3e;
+  transition: all 0.2s linear;
+  border: #fccd05;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 0px 80px -5px rgba(248, 231, 28, 1);
+}
+
+/* Instagram-section */
+
+.mobile-nik {
+  display: none;
+}
+.Instagram-section-content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.Instagram-section-content-title {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.Instagram-section-content-title h2 {
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42.66px;
+  color: #443e3e;
+}
+.Instagram-section-content-nik {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Instagram-section-content-nik p {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #e81212;
+}
+.Instagram-section-content-card {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /* respansive */
 
+@media (max-width: 1247px) {
+  .Статьи-section-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 1232px) {
   .cards-section-content .cards-section-content-imgContainer img {
     width: 100%;
@@ -1074,10 +1399,61 @@ a {
     display: none;
   }
 }
+@media (max-width: 972px) {
+  .Наши-section-content-card img {
+    width: 285px;
+  }
+  .Наши-section-content-card {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 947px) {
+  .par {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (max-width: 887px) {
   .p {
     display: flex;
     justify-content: center;
+  }
+  .Отзывы-section-content-работе {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .browser {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 100px;
+  }
+  .Отзывы-section-content-работе {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .Отзывы-card {
+    display: block;
+  }
+  .text-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-title p {
+    display: flex;
+  }
+  .Отзывы-card-years {
+    display: none;
+  }
+  .Отзывы-card p {
+    display: flex;
+    text-align: unset;
   }
 }
 @media (max-width: 742px) {
@@ -1254,6 +1630,38 @@ a {
   .product-section-content-card-Римская .order {
     display: flex;
   }
+  .Статьи-section-content-img h3 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+}
+@media (max-width: 592px) {
+  .Instagram-section-content-card {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .Instagram-section-content-card img {
+    width: 160px;
+  }
+  .Instagram-section-content-nik {
+    display: none;
+  }
+  .mobile-nik {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .mobile-nik p {
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #e81212;
+  }
 }
 @media (max-width: 535px) {
   .hero-section-content {
@@ -1298,6 +1706,61 @@ a {
     font-weight: 300;
     line-height: 15px;
   }
+  .Давайте-section-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.44px;
+    width: 100%;
+  }
+  .праздник-card-section {
+    display: flex;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .par {
+    display: flex;
+    justify-content: center;
+  }
+  .browser {
+    display: flex;
+    gap: 10px;
+  }
+  .yandex .yandex {
+    display: none;
+  }
+  .mobile-img-google {
+    display: flex;
+    justify-content: center;
+  }
+  .Отзывы-section-content-работе {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .Статьи-section-content-img h3 {
+    width: 250px;
+  }
+}
+@media (max-width: 450px) {
+  .browser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+  }
+  .Instagram-section-content-card img {
+    width: 120px;
+  }
+  .Instagram-section-content-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .Instagram-section-content-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.66px;
+  }
 }
 @media (max-width: 350px) {
   .hero-section-content h1 {
@@ -1320,7 +1783,6 @@ a {
     line-height: 12.22px;
     padding: 5px 10px;
     margin-left: 85px;
-    /* text-align: center; */
   }
   .hero-section-img img {
     margin: auto;
@@ -1419,5 +1881,12 @@ a {
   }
   .Профессиональные-card h3 {
     width: 200px;
+  }
+  .Статьи-section-content-img h3 {
+    width: 200px;
+  }
+  .Instagram-section-content-card {
+    display: flex;
+    justify-content: space-around;
   }
 }
